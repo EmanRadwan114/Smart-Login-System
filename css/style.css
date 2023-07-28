@@ -1,0 +1,106 @@
+/* start of general styles */
+:root {
+  --bgColor: rgb(246, 242, 235);
+  --primaryColor: rgb(254, 200, 135);
+  --lightBlack: rgba(0, 0, 0, 0.5) !important;
+}
+
+body {
+  background-color: var(--bgColor);
+  font-family: "Fjalla One", sans-serif;
+}
+
+/* end of general styles */
+
+/* start of common style */
+.loginDesc,
+.signUpmsg,
+.signInmsg,
+.notExistMsg,
+.errorMsg,
+.forgetPassLink {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.signupLink,
+.signInLink,
+.logoutBtn {
+  transition: color 300ms;
+}
+
+.signupLink:hover,
+.signInLink:hover,
+.logoutBtn:hover {
+  color: rgb(179, 142, 97) !important;
+}
+/* end of common style */
+
+/* start of login page */
+.loginBox {
+  box-shadow: 0 0 15px 0.5px rgba(120, 92, 58, 0.15);
+  width: 100%;
+}
+
+input::placeholder,
+input,
+.form-control:focus {
+  color: var(--lightBlack) !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem var(--primaryColor) !important;
+  border-color: transparent !important;
+}
+
+.loginBtn,
+.signUpBtn {
+  background-color: var(--primaryColor);
+  border-color: transparent !important;
+  transition: background-color 300ms, border-color 300ms;
+}
+
+.loginBtn:hover,
+.signUpBtn:hover {
+  background-color: transparent !important;
+  border-color: var(--primaryColor) !important;
+}
+
+.fa-eye,
+.fa-eye-slash {
+  right: 20px;
+  top: 20px !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+  cursor: pointer;
+}
+
+/* start of media query of login page */
+@media screen and (min-width: 992px) {
+  .loginBox {
+    width: 55%;
+  }
+}
+/* end of media query of login page */
+/* end of login page */
+
+/* start of home page */
+.home-main-content {
+  padding: 50px 0;
+}
+
+.home-content img {
+  width: 80%;
+}
+
+/* start of media query of home page */
+@media screen and (min-width: 768px) {
+  .home-content img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .home-content img {
+    width: 30%;
+  }
+}
+/* end of media query of home page */
+/* end of home page */

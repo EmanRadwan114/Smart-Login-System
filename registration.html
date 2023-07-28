@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <!-- Google FONTS lINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Condensed:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awsome Link -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- Bootstrap Css Link -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Main Css Link -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main
+      class="vh-100 d-flex justify-content-center align-items-center text-center"
+    >
+      <div class="container-sm">
+        <div class="loginBox bg-white p-4 rounded-4 mx-auto">
+          <h1 class="loginTitle text-dark-emphasis fw-bold mb-3 fs-2">
+            Create an accout
+          </h1>
+          <div class="loginForm mt-4">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control border-1 px-3 username"
+                placeholder="Username"
+                autofocus
+                name="username"
+              />
+              <p
+                class="errorMsg text-danger fs-6 text-start mt-1 errorName px-2"
+              ></p>
+            </div>
+            <div class="mb-3">
+              <input
+                type="tel"
+                class="form-control border-1 px-3 mobNumber"
+                placeholder="Mobile Number"
+                name="mobNumber"
+              />
+              <p
+                class="errorMsg text-danger fs-6 text-start mt-1 px-2 errorMob"
+              ></p>
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control border-1 px-3 email"
+                placeholder="Email"
+                name="email"
+              />
+              <p
+                class="errorMsg text-danger fs-6 text-start mt-1 px-2 errorEmail"
+              ></p>
+            </div>
+            <div class="mb-3 position-relative">
+              <input
+                type="password"
+                class="form-control border-1 px-3 pass"
+                placeholder="Password"
+                name="pass"
+              />
+              <p
+                class="errorMsg text-danger fs-6 text-start mt-1 px-2 errorPass"
+              ></p>
+              <i
+                class="fa-solid fa-eye position-absolute translate-middle-y d-none hidePass"
+              ></i>
+              <i
+                class="fa-solid fa-eye-slash position-absolute translate-middle-y showPass d-inline-block"
+              ></i>
+            </div>
+            <div class="mb-3 position-relative">
+              <input
+                type="password"
+                class="form-control border-1 px-3 confirmPass"
+                placeholder="Confirm Password"
+                name="confirmPass"
+              />
+              <p
+                class="errorMsg text-danger fs-6 text-start mt-1 px-2 errorConfirm"
+              ></p>
+              <i
+                class="fa-solid fa-eye position-absolute translate-middle-y d-none hideConfPass"
+              ></i>
+              <i
+                class="fa-solid fa-eye-slash position-absolute translate-middle-y showConfPass d-inline-block"
+              ></i>
+            </div>
+            <div class="mb-3">
+              <button class="btn signUpBtn p-0 border-3" type="submit">
+                <a
+                  href=""
+                  class="text-dark-emphasis fs-5 text-decoration-none py-2 px-5 d-inline-block"
+                  >Create Account</a
+                >
+              </button>
+            </div>
+
+            <p class="text-body-secondary fs-5 signInmsg">
+              Have an account?
+              <a
+                href="index.html"
+                class="text-body-secondary fs-5 signInLink text-capitalize"
+                >sign In</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Bootstrap Js File -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Main Js File -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
